@@ -5,14 +5,15 @@ A remote-controlled laser cat toy.
 This project will use MQTT to connect a wireless joystick controller to a a laser cat toy.
 
 ## Status
-I've worked out analog multiplexing to connect two potentiometers to the one analog input on the Adafruit Feather Huzzah.
+Rather than using an esp8266, I've switched to an Adafruit M0 WiFi board, which has multiple analog inputs built in. This allows me to get a much smaller form factor for the joystick, since I don't need a protoboard with an analog multiplexer.
+
+I'm currently using MQTT as an intermediary between the joystick and the laser.
 
 ## Parts List
 
 Electronic parts:
-- 2x [Adafruit Feather Huzzah](https://www.adafruit.com/product/2821)
-- [TI CD74HC4051E analog multiplexer](http://www.mouser.com/Search/ProductDetail.aspx?R=CD74HC4051Evirtualkey59500000virtualkey595-CD74HC4051E)
-- Uno clone (for testing)
+- [Adafruit M0 WiFi](https://www.adafruit.com/products/3010)
+- [Adafruit Feather Huzzah](https://www.adafruit.com/product/2821)
 - [Joystick module](https://www.adafruit.com/products/512)
 - [Laser diode](https://www.adafruit.com/products/1054)
 - [Laser mount](https://www.adafruit.com/products/1094)
